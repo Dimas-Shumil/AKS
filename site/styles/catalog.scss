@@ -473,16 +473,16 @@ select {
     display: flex;
     margin-top: auto;
     padding-top: 12px;
-    align-items: center;
-    gap: 8px;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 10px;
   }
 
   &__price {
-    margin-right: auto;
     color: $catalog-light-text;
-    font-size: 23px;
-    line-height: 1;
-    white-space: nowrap;
+    font-size: 19px;
+    line-height: 1.2;
+    white-space: normal;
   }
 
   &__more,
@@ -500,6 +500,7 @@ select {
   }
 
   &__more {
+    width: 100%;
     border: 1px solid rgba(23, 24, 26, 0.18);
     color: #55575d;
     background: transparent;
@@ -1638,8 +1639,8 @@ select {
 
     &__price {
       margin-right: 0;
-      font-size: 17px;
-      line-height: 1.12;
+      font-size: 15px;
+      line-height: 1.2;
       white-space: normal;
     }
 

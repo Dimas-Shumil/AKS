@@ -413,15 +413,15 @@ select {
   display: flex;
   margin-top: auto;
   padding-top: 12px;
-  align-items: center;
-  gap: 8px;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 10px;
 }
 .catalog-card__price {
-  margin-right: auto;
   color: #17181a;
-  font-size: 23px;
-  line-height: 1;
-  white-space: nowrap;
+  font-size: 19px;
+  line-height: 1.2;
+  white-space: normal;
 }
 .catalog-card__more, .catalog-card__request {
   display: inline-flex;
@@ -436,6 +436,7 @@ select {
   transition: border-color 160ms ease, background 160ms ease;
 }
 .catalog-card__more {
+  width: 100%;
   border: 1px solid rgba(23, 24, 26, 0.18);
   color: #55575d;
   background: transparent;
@@ -1542,8 +1543,8 @@ select {
   }
   .catalog-card__price {
     margin-right: 0;
-    font-size: 17px;
-    line-height: 1.12;
+    font-size: 15px;
+    line-height: 1.2;
     white-space: normal;
   }
   .catalog-card__more {
@@ -1715,3 +1716,5 @@ select {
   font-family: russoone;
   src: url("../fonts/RussoOne-Regular.ttf");
 }
+
+/*# sourceMappingURL=catalog.css.map */
